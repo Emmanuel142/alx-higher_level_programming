@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def remove_char_at(str, n):
-    if len(str) > n:
+    if 0 <= n < len(str):
         cpy = list(str)
         del cpy[n]
         result = ''.join(cpy)
-        print('{}'.format(result))
-    elif str != None:
-        print('{}'.format(s))
+        return result
+    else:
+       return str
