@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-def remove_char_at(str, n):
-    if len(str) < n:
-        cpy = None
-        for i in range(len(str)):
-            if i == n:
-                continue
-            else:
-                cpy[i] = str[i]
-        print('{}'.format(cpy))
+def remove_char_at(s, n):
+    if len(s) > n:
+        cpy = list(s)
+        del cpy[n]
+        result = ''.join(cpy)
+        print('{}'.format(result))
     else:
-        print('{}'.format(str))
+        print('{}'.format(s))
