@@ -5,4 +5,4 @@ def uppercase(str):
             c = ord(c) - 26
             print('{}'.format(chr(c)), end="")
         else:
-            print('{}'.format(chr(c), end="")
+            print('{}'.format(chr(c)), end="")
