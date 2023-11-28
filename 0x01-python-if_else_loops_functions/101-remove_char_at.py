@@ -6,4 +6,4 @@ def remove_char_at(str, n):
         result = ''.join(cpy)
         return result
     else:
-       return str
+        return str
