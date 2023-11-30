@@ -7,16 +7,16 @@ if __name__ == "__main__":
         exit(1)
     operator = argv[2]
     operators = ["+", "-", "*", "/"]
-    if oprator not in operators:
+    if operator not in operators:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
-    a = int(arg[1])
-    b = int(arg[3])
+    a = int(argv[1])
+    b = int(argv[3])
     if operator == "+":
         print('{:d} + {:d} = {:d}'.format(a, b, add(a, b)))
     elif operator == "-":
         print('{:d} - {:d} = {:d}'.format(a, b, sub(a, b)))
-    elif oprator == "/":
+    elif operator == "/":
         print('{:d} / {:d} = {:d}'.format(a, b, div(a, b)))
     else:
         print('{:d} * {:d} = {:d}'.format(a, b, mul(a, b)))
