@@ -1,21 +1,22 @@
 #!/usr/bin/python3
-"""Square modules
-This modules create an empty square class
+"""Square module
+This module creates an empty Square class.
 Todo:
-    create an empty class
+    Create an empty class.
 """
-def main():
-    """ The beginning of the program
-    Args:
-        No arguments
-    Return:
-        Nothing
+
+
+class Square:
+    """Empty square class.
+
+    Attributes:
+        No attributes.
+
+    Methods:
+        No methods.
     """
-    class Square:
-        """ Empty square
-        """
-        pass
+    pass
 
 
 if __name__ == "__main__":
-    main()
+    pass
