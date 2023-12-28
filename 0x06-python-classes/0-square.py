@@ -12,10 +12,9 @@ def main():
         Nothing
     """
     class Square:
+        """ Empty square
+        """
         pass
-
-
-    pass
 
 
 if __name__ == "__main__":
