@@ -55,10 +55,10 @@ class Rectangle:
                 TypeError: if the value is not an interger
                 ValueError: if the value is less than 0
             """
-            if isinstance(value, int):
-                if value >= 0:
-                    self.__height = value
-                else:
-                    raise ValueError("height must be >= 0")
+        if isinstance(value, int):
+            if value >= 0:
+                self.__height = value
             else:
-                raise TypeError("height must be an integer")
+                raise ValueError("height must be >= 0")
+        else:
+            raise TypeError("height must be an integer")
