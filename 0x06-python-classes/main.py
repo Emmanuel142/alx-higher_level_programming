@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-Square = __import__('3-square').Square
+Square = __import__('4-square').Square
 
-S = Square()
+S = Square(5)
 
 print(type(S))
-print (S.__dict__)
+print (S.area)
+print(S.size)
