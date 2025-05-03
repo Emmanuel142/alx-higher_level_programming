@@ -4,6 +4,9 @@ Square = __import__('4-square').Square
 
 S = Square(5)
 
-print(type(S))
-print (S.area)
+print (S.area())
 print(S.size)
+
+S.size = 7
+
+print(S.area())

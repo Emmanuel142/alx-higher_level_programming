@@ -6,6 +6,7 @@ Todo:
     Initialize the class with size with the optional value of zero
     Check for exception in input
     Calculate the area of the square
+    Create a property retrieve the size
     Create a setter for the size attribute
     """
 
@@ -28,13 +29,18 @@ class Square:
             raise TypeError("size must be an integer")
         self.__size = size
 
-
     def area(self):
         """This returns the area of a square
         """
         return self.__size * self.__size
 
     @property
+    def size(self):
+        """This property return the size of the square
+        """
+        return self.__size
+
+    @size.setter
     def size(self, value):
         """This property set the value of the private attribute size
         Args:
