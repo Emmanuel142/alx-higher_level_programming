@@ -20,7 +20,7 @@ class Square:
         ValueError: if the input is less than 0
         TypeError: if the input is not integer
         """
-    def __init__(self, size):
+    def __init__(self, size=0):
         if type(size) is not int:
             raise TypeError("size must be an integer")
         if size < 0:
