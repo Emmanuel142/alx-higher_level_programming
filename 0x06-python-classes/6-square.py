@@ -22,11 +22,13 @@ class Square:
     """A class of square
 
     Args:
-        No arguments
+        size (int): the size of the square
+        position (tuple): the position of the square
     Attributes:
         No Attributes
     Raises:
-        TypeError: if the input is not an integer
+        TypeError: if the input is not an integer or
+            position is not a valid tuple
         ValueError: if the input is less than zero
         """
     def __init__(self, size=0, position=(0, 0)):
@@ -35,7 +37,7 @@ class Square:
         if type(size) is not int:
             raise TypeError("size must be an integer")
         self.__size = size
-        if type(position) != tuple and isinstance(i, int) < 0 for i in position:
+        if type(position) != tuple or not all(isinstance(i, int) < and i >= 0 for i in position):
             raise TypeError("position must be tuple of 2 positive integers")
         self.__position = position
 
