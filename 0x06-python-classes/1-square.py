@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 
 """Square
-This module create a class square
-with size
+This module create a class square with size
+Todo:
+    Create a class of square that initialize with size
 """
 
 
 class Square:
-    """This is a class of square that instatinionze with size
+    """This is a class of square that instatinize with size
 
     Args:
         No argument

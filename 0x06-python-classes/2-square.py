@@ -13,12 +13,10 @@ class Square:
     """This is a class of Squre with size
 
     Args:
-        NO arguments
+        No arguments
     Attributes:
-        NO attributes
-
+        No attributes
     """
-
 
     def __init__(self, size):
         """
@@ -27,7 +25,7 @@ class Square:
         Raises:
             TypeError: if the input is not an integer
             ValueError: if the input is < 0
-        """
+            """
         if type(size) != int:
             raise TypeError("size must be an integer")
         if size < 0:
