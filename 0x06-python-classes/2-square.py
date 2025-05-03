@@ -5,7 +5,13 @@
 
 
 class Square:
-    """This class 
+    """This is a class of Squre with size
+
+    Args:
+        NO arguments
+    Attributes:
+        NO attributes
+
     """
 
 
@@ -13,10 +19,8 @@ class Square:
         """
         """
         if type(size) != int:
-            raise TypeError:
-                print("size must be an integer")
+            raise TypeError("size must be an integer")
         if size < 0:
-            raise ValueError:
-                print("size must be >= 0")
+            raise ValueError("size must be >= 0")
 
         self.__size = size
