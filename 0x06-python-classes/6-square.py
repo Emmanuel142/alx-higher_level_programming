@@ -102,11 +102,11 @@ class Square:
         count = self.position[0]
         if self.size == 0:
             print()
-            return
         for i in range(self.size):
-            if count > 0:
+            while count > 0:
                 print(" ", end="")
-                count - 1
+                count -= 1
             for j in range(self.size):
                 print("#", end="")
+            count = self.position[0]
             print()
