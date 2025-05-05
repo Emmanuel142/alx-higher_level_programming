@@ -110,3 +110,4 @@ class Square:
                 print("#", end="")
             count = self.position[0]
             print()
+        print()
