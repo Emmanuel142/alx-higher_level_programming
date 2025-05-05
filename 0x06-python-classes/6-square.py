@@ -100,7 +100,7 @@ class Square:
                 ###
             """
         count = self.position[0]
-        #if no square return
+        # if no square return
         if self.size == 0:
             print()
             return
