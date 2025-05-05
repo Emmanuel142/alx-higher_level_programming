@@ -2,7 +2,8 @@
 
 Square = __import__('6-square').Square
 
-my_square = Square(5, ("a", 5))
-print(my_square.size)
-print(my_square.area())
-my_square.my_print()
+square = Square(3)
+my_square = Square(5, (3, 5))
+print(square.size)
+print(square.area())
+square.my_print()
