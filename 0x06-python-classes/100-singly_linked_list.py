@@ -47,10 +47,22 @@ class Node:
         Args:
             value (object): This stores the node
         """
-        if value is not None or value is not Node:
+        if value is not None or value not isinstance(value,Node):
             raise TypeError("next_node must be a Node object")
+        self.__next_node = value
 
 
-class SingleLInkedList:
-    def __Init__(self, head):
-        self.__head = head
+class SingleLinkedList:
+    def __init__(self):
+        self.__head = None
+
+    def sorted_insert(self, value):
+        new_node = Node(value)
+        if new_node.next_node is None or self.__head.data < value:
+            if value > current_node.data:
+                new_node.next_node = self.__head
+                self.__head = new_node
+            else:
+                current = self.__head
+
+

@@ -101,11 +101,16 @@ class Square:
             """
         count = self.position[0]
         # if no square return
+
         if self.size == 0:
             print()
             return
+        #print newline for top position
+
         for i in range(self.position[1]):
             print()
+        #loop through and print space for position and # for square
+
         for i in range(self.size):
             while count > 0:
                 print(" ", end="")
@@ -114,5 +119,6 @@ class Square:
                 print("#", end="")
             count = self.position[0]
             print()
+        #print newline for the bottom position
         for i in range(self.position[1]):
             print()
