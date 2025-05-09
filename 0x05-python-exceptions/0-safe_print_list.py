@@ -8,6 +8,7 @@ def safe_print_list(my_list=[], x=0):
         Args:
             my_list (list)= This is the list of all types(int,str,...)
             x (int) = The number of item to be printed
+        """
     try:
         store = ""
         count = 0
