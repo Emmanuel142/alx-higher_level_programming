@@ -6,7 +6,7 @@ third_print = 3
 
 safe_print_list(3)
 safe_print_list(second_print, 3)
-safe_print_list(first_print, 3)
+safe_print_list(first_print, 9)
 
 
 
