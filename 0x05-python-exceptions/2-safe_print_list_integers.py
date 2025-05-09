@@ -9,11 +9,15 @@ def safe_print_list_integers(my_list=[], x=0):
             my_list[] (list): List of items(int, str,...)
             x (int): The depth of item to print
         """
-    try:
-        printed_count = 0
-        score = ""
-        for i in range(x):
+    printed_count = 0
+    score = ""
+    for i in range(x):
+        try:
             print("{:d}".format(my_list[i]), end="")
-        return printed_count
-    except Exception as e:
-        print(e)
+            printed_count += 1
+        except (ValueError, TypeError):
+            pass
+        except IndexError:
+            break
+    print()
+    return printed_count
