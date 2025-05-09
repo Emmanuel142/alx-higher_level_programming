@@ -3,6 +3,7 @@
 """This module print the x element of a list
 """
 
+
 def safe_print_list(my_list=[], x=0):
     """This function print item in a list
         Args:
@@ -18,6 +19,5 @@ def safe_print_list(my_list=[], x=0):
                 count += 1
         print(store)
         return count
-    except:
-        Exception(e)
+    except Exception(e):
         print(e)
