@@ -5,8 +5,8 @@ second_print = ["a",5,"b",6,"bard"]
 third_print = 3
 
 safe_print_list(3)
-safe_print_list(second_print)
-safe_print_list(first_print)
+safe_print_list(second_print, 3)
+safe_print_list(first_print, 3)
 
 
 

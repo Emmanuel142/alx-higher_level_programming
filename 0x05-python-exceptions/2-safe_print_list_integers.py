@@ -10,19 +10,10 @@ def safe_print_list_integers(my_list=[], x=0):
             x (int): The depth of item to print
         """
     try:
-        item_count = 0
         printed_count = 0
         score = ""
-        for item in my_list:
-            if isinstance(item, int):
-                score += str(item)
-                printed_count += 1
-            else:
-                pass
-            if item_count != x:
-                item_count += 1
-            else:
-                raise Exception('x is bigger than the list')
-        print("{:d}".format(int(score)))
+        for i in range(x):
+            print("{:d}".format(my_list[i]), end="")
+        return printed_count
     except Exception as e:
         print(e)
