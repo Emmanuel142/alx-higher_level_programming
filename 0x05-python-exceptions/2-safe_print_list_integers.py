@@ -15,7 +15,7 @@ def safe_print_list_integers(my_list=[], x=0):
         score = ""
         for item in my_list:
             if isinstance(item, int):
-                score += item
+                score += str(item)
                 printed_count += 1
             else:
                 pass
