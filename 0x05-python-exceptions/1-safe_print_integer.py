@@ -3,6 +3,7 @@
 """This module print an integer
 """
 
+
 def safe_print_integer(value):
     """This function print integer
         Args:
