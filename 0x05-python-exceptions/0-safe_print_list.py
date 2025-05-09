@@ -19,5 +19,5 @@ def safe_print_list(my_list=[], x=0):
                 count += 1
         print(store)
         return count
-    except Exception(e):
+    except Exception as e:
         print(e)

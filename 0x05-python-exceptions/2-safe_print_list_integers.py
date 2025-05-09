@@ -24,5 +24,5 @@ def safe_print_list_integers(my_list=[], x=0):
             else:
                 raise Exception('x is bigger than the list')
         print("{:d}".format(int(score)))
-    except Exception(e):
+    except Exception as e:
         print(e)
