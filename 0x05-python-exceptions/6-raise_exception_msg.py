@@ -4,7 +4,7 @@
 """
 
 
-def raise_exception():
+def raise_exception_msg(message=""):
     """This function raises a type exception
     """
-    raise TypeError()
+    raise NameError(message)
