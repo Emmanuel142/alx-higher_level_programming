@@ -5,6 +5,6 @@
 
 
 def raise_exception():
-    """This function raises exception
+    """This function raises a type exception
     """
-    raise Exception()
+    raise TypeError()
