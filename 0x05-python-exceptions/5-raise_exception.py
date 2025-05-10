@@ -7,5 +7,4 @@
 def raise_exception():
     """This function raises exception
     """
-    raise Exception as e:
-        return e
+    raise Exception()
