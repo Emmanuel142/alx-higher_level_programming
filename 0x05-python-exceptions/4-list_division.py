@@ -8,29 +8,27 @@ def list_division(my_list_1, my_list_2, list_length):
     """This function takes list 1 and divide it with
     list 2
     Args:
-        my_list_1 (list): Takes any input(int,str,etc)
-        my_list_2 (list): Takes any input(int,str,etc)
-        list_lenght (int): The total length to be accessed
+        my_list_1 (list): first list (numerator)
+        my_list_2 (list): second list (denomerator)
+        list_length (int): The total length to be accessed
     Raises:
         IndexError: print "out of range"
         TypeError: print "wrong type"
         ZeroDivisionError: print "division by 0"
         """
-    result = None
     overall = []
     for i in range(list_length):
         try:
             result = my_list_1[i] / my_list_2[i]
-            overall.append(result)
         except TypeError:
             print("wrong type")
-            overall.append(0)
+            result = 0
         except IndexError:
             print("out of range")
-            return overall
+            result = 0
         except ZeroDivisionError:
             print("division by 0")
-            overall.append(0)
+            result = 0
         finally:
-            print(overall)
+            overall.append(result)
     return overall
