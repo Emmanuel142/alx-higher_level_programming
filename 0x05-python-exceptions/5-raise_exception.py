@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+
+"""This module raise and exception
+"""
+
+
+def raise_exception():
+    """This function raises exception
+    """
+    raise Exception as e:
+        return e
