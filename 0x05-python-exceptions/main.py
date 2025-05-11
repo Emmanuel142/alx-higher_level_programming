@@ -1,10 +1,18 @@
 #!/usr/bin/python3
-safe_print_list = __import__('4-list_division').list_division
-first_print = [2, 0, 2, 2, 2,2]
-second_print = [6, 8, 10, 12, 14]
-third_print = 3
+safe_print_integer_err = \
+    __import__('100-safe_print_integer_err').safe_print_integer_err
 
-safe_print_list(second_print, first_print, 8)
+value = 89
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
 
+value = -89
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
 
-
+value = "School"
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))

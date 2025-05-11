@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-sys = __import__('sys')
-
+from sys import stderr
 """This module safely print integer
 """
 
@@ -17,5 +16,5 @@ def safe_print_integer_err(value):
         print("{:d}".format(value))
         return True
     except (TypeError, ValueError) as e:
-        print(e, file=sys.stderr)
+        print("Exception:",e, file=stderr)
         return False
