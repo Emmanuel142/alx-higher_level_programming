@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import sys
+sys = __import__('sys')
 
 """This module safely print integer
 """
