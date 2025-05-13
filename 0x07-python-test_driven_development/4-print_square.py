@@ -2,6 +2,8 @@
 """This module define a function that print
     square with #
     """
+
+
 def print_square(size):
     """This function print square with a #
     Args:
