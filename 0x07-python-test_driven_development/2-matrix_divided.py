@@ -19,5 +19,5 @@ def matrix_divided(matrix, div):
             if len(row) != row_length:
                 raise TypeError("Each row of the matrix must have the same size")
 
-        new_matrix = [[(round(i - div, 2)) for i in row] for row in matrix]
+        new_matrix = [[(round(i / div, 2)) for i in row] for row in matrix]
         return new_matrix
