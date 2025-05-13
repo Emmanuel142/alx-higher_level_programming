@@ -12,7 +12,7 @@ def matrix_divided(matrix, div):
         Raise:
             TypeError: if div is not a number or list
                 does is not integer or float
-            """
+                """
     if not isinstance(matrix, list) or not all(isinstance(row, list)
                                                for row in matrix):
         raise TypeError("matrix must be a matrix
