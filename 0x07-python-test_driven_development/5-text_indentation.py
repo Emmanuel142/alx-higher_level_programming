@@ -21,9 +21,9 @@ def text_indentation(string):
     while i < len(string):
         new_string += string[i]
         if string[i] in symbols:
-            new_string += "\n"
+            new_string += "\n\n"
             i += 1
-        if string[i] == " ":
+        while string[i] == " " and string[i + 1] in symbols:
             i += 1
             continue
         i += 1
