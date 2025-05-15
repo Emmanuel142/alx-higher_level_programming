@@ -5,7 +5,7 @@
 
 def text_indentation(string):
     """This function indent by printing a newline
-    when it enconter symbols like ", / . \"
+    when it enconter symbols like ", ? . :"
     Args:
         string (str): string of word
     """
@@ -22,4 +22,4 @@ def text_indentation(string):
             i += 1
             continue
         i += 1
-    print(new_string)
+    print(new_string, end="")
