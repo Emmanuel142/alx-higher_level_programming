@@ -8,7 +8,12 @@ def text_indentation(string):
     when it enconter symbols like ", ? . :"
     Args:
         string (str): string of word
+    Raise:
+        
+        TypeError: if the input is not string
     """
+    if not isinstance(string, str):
+        raise TypeError("text must be a string")
     symbols = [",", "?", ".", ":"]
     new_string = ""
     i = 0
@@ -16,7 +21,7 @@ def text_indentation(string):
     while i < len(string):
         new_string += string[i]
         if string[i] in symbols:
-            new_string += "\n\n"
+            new_string += "\n"
             i += 1
         if string[i] == " ":
             i += 1
