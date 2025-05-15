@@ -1,0 +1,6 @@
+this is the test for test indentation
+_____________________________________
+_____________________________________
+>>> indent = __import__('5-text_indentation').text_indentation
+>>> indent("Hello world, you are mine")
+
