@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module defines a Rectangele
+"""This module defines a Rectangle
 """
 
 
@@ -26,7 +26,7 @@ class Rectangle():
         if width < 0:
             raise ValueError("width must be >= 0")
         self.__width = width
-        number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         if self.perimeter == 0:
@@ -38,7 +38,7 @@ class Rectangle():
 
     def __del__(self):
         print("Bye rectangle...")
-        number_of_instances -= 0
+        Rectangle.number_of_instances -= 0
 
     @property
     def height(self):
