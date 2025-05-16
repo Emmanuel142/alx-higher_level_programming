@@ -7,6 +7,9 @@ ______________________________
 
 >>> my_rect.area()
 8
+>>> str(my_rect)
+####
+####
 >>> my_rect.perimeter()
 12
 >>> print(my_rect.__dict__)

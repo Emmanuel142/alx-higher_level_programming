@@ -25,6 +25,12 @@ class Rectangle():
             raise ValueError("width must be >= 0")
         self.__width = width
 
+    def __str__(self):
+        return '\n'.join('#' * self.width for _ in range(self.height))
+
+    def __repr__(self):
+        return '\n'.join('#' * self.width for _ in range(self.height))
+
     @property
     def height(self):
         return self.__height
