@@ -33,6 +33,9 @@ class Rectangle():
     def __repr__(self):
         return f"Rectangle({self.height}, {self.width})"
 
+    def __del__(self):
+        return f"Bye rectangle ..."
+
     @property
     def height(self):
         return self.__height
