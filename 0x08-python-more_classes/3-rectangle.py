@@ -26,10 +26,10 @@ class Rectangle():
         self.__width = width
 
     def __str__(self):
-        return '\n'.join('#' * self.width for _ in range(self.height))
+        return '\n'.join('#' * self.height for _ in range(self.width))
 
     def __repr__(self):
-        return '\n'.join('#' * self.width for _ in range(self.height))
+        return '\n'.join('#' * self.height for _ in range(self.width))
 
     @property
     def height(self):
