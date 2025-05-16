@@ -34,7 +34,7 @@ class Rectangle():
         return f"Rectangle({self.height}, {self.width})"
 
     def __del__(self):
-        return f"Bye rectangle ..."
+        print("Bye rectangle ...")
 
     @property
     def height(self):
