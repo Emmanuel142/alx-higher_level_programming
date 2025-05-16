@@ -1,0 +1,21 @@
+This is the test for rectangle
+______________________________
+______________________________
+>>> rectangle = __import__('3-rectangle').Rectangle
+
+>>> my_rect = rectangle(2, 4)
+
+>>> my_rect.area()
+8
+>>> my_rect.perimeter()
+12
+>>> print(my_rect.__dict__)
+{'_Rectangle__height': 2, '_Rectangle__width': 4}
+>>> my_rect.height = 4
+>>> my_rect.width = 7
+>>> my_rect.area()
+28
+>>> my_rect.width = -3
+Traceback (most recent call last):
+	...
+ValueError: width must be >= 0

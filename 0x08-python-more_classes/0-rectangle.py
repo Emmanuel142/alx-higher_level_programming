@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Rectangle class
-
+"""This module create an empty Rectangle class
 """
 
 
