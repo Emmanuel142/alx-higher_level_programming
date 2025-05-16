@@ -30,9 +30,6 @@ class Rectangle():
             return
         return '\n'.join('#' * self.height for _ in range(self.width))
 
-    def __repr__(self):
-        return f"<Rectangle({self.height}, {self.width})>"
-
     @property
     def height(self):
         return self.__height
