@@ -13,6 +13,8 @@ class Rectangle():
     Raise:
         TypeError: if input is not int
         """
+    number_of_instances = 0
+
     def __init__(self, height=0, width=0):
         if not isinstance(height, int):
             raise TypeError("height must be an integer")
@@ -24,6 +26,7 @@ class Rectangle():
         if width < 0:
             raise ValueError("width must be >= 0")
         self.__width = width
+        number_of_instances += 1
 
     def __str__(self):
         if self.perimeter == 0:
@@ -35,6 +38,7 @@ class Rectangle():
 
     def __del__(self):
         print("Bye rectangle...")
+        number_of_instances -= 0
 
     @property
     def height(self):
