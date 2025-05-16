@@ -14,6 +14,7 @@ class Rectangle():
         TypeError: if input is not int
         """
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, height=0, width=0):
         if not isinstance(height, int):
@@ -31,7 +32,8 @@ class Rectangle():
     def __str__(self):
         if self.perimeter == 0:
             return
-        return '\n'.join('#' * self.height for _ in range(self.width))
+        line = str(Rectangle.print_symbol) * self.height
+        return '\n'.join(line for _ in range(self.width))
 
     def __repr__(self):
         return f"Rectangle({self.height}, {self.width})"

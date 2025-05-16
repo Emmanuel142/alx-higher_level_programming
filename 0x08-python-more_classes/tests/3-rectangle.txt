@@ -1,7 +1,7 @@
 This is the test for rectangle
 ______________________________
 ______________________________
->>> rectangle = __import__('3-rectangle').Rectangle
+>>> rectangle = __import__('7-rectangle').Rectangle
 
 >>> my_rect = rectangle(2, 4)
 
