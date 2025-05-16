@@ -26,9 +26,8 @@ class Rectangle():
         self.__width = width
 
     def __str__(self):
-        return '\n'.join('#' * self.height for _ in range(self.width))
-
-    def __repr__(self):
+        if self.perimeter == 0:
+            return
         return '\n'.join('#' * self.height for _ in range(self.width))
 
     @property

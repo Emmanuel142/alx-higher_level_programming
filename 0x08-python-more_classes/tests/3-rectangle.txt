@@ -10,6 +10,8 @@ ______________________________
 >>> str(my_rect)
 ####
 ####
+>>> print(repr(my_rect))
+
 >>> my_rect.perimeter()
 12
 >>> print(my_rect.__dict__)
