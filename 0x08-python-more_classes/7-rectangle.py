@@ -32,7 +32,7 @@ class Rectangle():
     def __str__(self):
         if self.perimeter == 0:
             return
-        line = str(Rectangle.print_symbol) * self.height
+        line = str(self.print_symbol) * self.height
         return '\n'.join(line for _ in range(self.width))
 
     def __repr__(self):

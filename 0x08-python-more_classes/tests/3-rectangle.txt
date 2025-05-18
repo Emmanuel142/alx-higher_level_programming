@@ -11,7 +11,8 @@ ______________________________
 ####
 ####
 >>> print(repr(my_rect))
-
+>>> my_rect.print_symbol = "%"
+>>> str(my_rect)
 >>> my_rect.perimeter()
 12
 >>> print(my_rect.__dict__)
