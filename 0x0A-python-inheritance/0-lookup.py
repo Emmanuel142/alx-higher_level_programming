@@ -3,4 +3,6 @@
 """
 
 def lookup(obj):
+    """This method is use for lookup
+    """
     return list(obj)
