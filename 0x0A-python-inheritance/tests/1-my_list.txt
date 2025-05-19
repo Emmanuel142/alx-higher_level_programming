@@ -1,0 +1,17 @@
+This is the test for printing sorted list
+_________________________________________
+_________________________________________
+
+>>> MyList = __import__('1-my_list').MyList
+
+>>> list1 = MyList()
+>>> list1.append(2)
+>>> list1.append(7)
+>>> list1.append(5)
+>>> list1.append(1)
+>>> print(list1)
+[2, 7, 5, 1]
+>>> list1.print_sorted()
+[1, 2, 5, 7]
+>>> print(list1)
+[2, 7, 5, 1]

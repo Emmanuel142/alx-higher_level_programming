@@ -4,8 +4,6 @@
     """
 
 
-class Mylist(list):
-    def __init__(self):
-
+class MyList(list):
     def print_sorted(self):
-        for i in 
+        return print(sorted(self))
