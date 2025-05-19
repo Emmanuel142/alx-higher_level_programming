@@ -8,6 +8,6 @@ def is_kind_of_class(obj, a_class):
     """This function return true if object is an instance
     of a class or is a subclass of a class else false
     """
-    if type(obj) is a_class or issubclass(obj, a_class):
+    if type(obj) is a_class or isinstance(obj, a_class):
         return True
     return False
