@@ -1,27 +1,19 @@
-#!/usr/bin/python3
-"""This module define a basegeometry with
-    undefined area and validate integer
-    """
+This is the test for basegeometry
+_________________________________
+_________________________________
+>>> base_geometry = __import__('7-base_geometry').BaseGeometry
 
-
-class BaseGeometry():
-    """The base geometry class
-    """
-    def area(self):
-        """Return Exception
-        """
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        """This method validate value
-        Args:
-            name (str): name of the geometry
-            value (int): value in integer
-        Raises:
-            TypeError: if value is not an integer
-            ValueError: if value is less than or equal to 0
-        """
-        if not isinstance(value, int):
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
+>>> my_base = base_geometry()
+>>> my_base.area()
+Traceback (most recent call last):
+	...
+Exception: area() is not implemented
+>>> my_base.integer_validator("Triangle", 76)
+>>> my_base.integer_validator("Rectangle", 0)
+Traceback (most recent call last):
+	...
+ValueError: Rectangle must be greater than 0
+>>> my_base.integer_validator("Square", "a")
+Traceback (most recent call last):
+	...
+TypeError: Square must be an integer
