@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This module define ...
+"""This module define a function that check if object
+    is instance of a class
 """
 
 
