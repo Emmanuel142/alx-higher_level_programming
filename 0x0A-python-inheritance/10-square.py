@@ -5,11 +5,15 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """
+    """This inherit from Rectangle
+        Args:
+            size (int): size of the square
     """
     def __init__(self, size):
         self.integer_validator("size", size)
         self.__size = size
 
     def area():
+        """This method determine the area size^2
+        """
         return self.__size * self.__size
