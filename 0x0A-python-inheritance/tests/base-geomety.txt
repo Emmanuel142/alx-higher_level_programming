@@ -1,0 +1,7 @@
+This is the test for basegeometry
+_________________________________
+_________________________________
+>>> base_geometry = __import__('6-base_geometry').BaseGeometry
+
+>>> my_base = base_geometry()
+>>> my_base.area()
