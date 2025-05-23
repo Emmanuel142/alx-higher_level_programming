@@ -3,7 +3,7 @@
 """
 
 
-def read_file(filename=""):
+def read_file(filename="", encoding="utf-8"):
     """This function read a text file (UTF)
     and print it to the stduot
     """
