@@ -26,3 +26,4 @@ else:
         if i != 0:
             my_list.append(sys.argv[i])
     save_to_json(my_list, filename)
+
