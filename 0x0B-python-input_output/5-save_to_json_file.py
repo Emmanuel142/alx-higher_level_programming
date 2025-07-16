@@ -4,7 +4,6 @@
 import json
 
 
-
 def save_to_json_file(my_obj, filename):
     """This function save object to json representation
     into text file
