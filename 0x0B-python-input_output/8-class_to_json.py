@@ -2,7 +2,6 @@
 """This module returns the dictionary description with
     simple data structure for json serialization of an object
 """
-import json
 
 
 def class_to_json(obj):
