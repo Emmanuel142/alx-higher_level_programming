@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+"""This module declare a Rectangle
 """
 from base import Base
 
