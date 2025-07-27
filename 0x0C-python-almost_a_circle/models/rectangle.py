@@ -104,3 +104,9 @@ class Rectangle(Base):
         """return area
         width * height"""
         return self.width * self.height
+
+    def display(self):
+        """print Rectangle to the stdout using #
+        """
+        for i in self.height:
+            print("#" * width)
