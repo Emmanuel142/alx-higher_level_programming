@@ -5,6 +5,11 @@ from base import Base
 
 
 class Rectangle(Base):
+    """This is a class of Rectangle
+    Args:
+        width (int): The width of the rectangle
+        height (int): The height of the rectangle
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.__width = width
