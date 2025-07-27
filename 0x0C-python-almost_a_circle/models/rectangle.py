@@ -9,6 +9,13 @@ class Rectangle(Base):
     Args:
         width (int): The width of the rectangle
         height (int): The height of the rectangle
+        x (int): x
+        y (int): y
+    Attributes:
+        height: get and set the height
+        width: get and set the width
+        x: get and set x
+        y: get and set y
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -19,10 +26,14 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """get height
+        """
         return self.__height
 
     @height.setter
     def height(self, value):
+        """Set height
+        """
         if not isinstance(value, int):
             raise TypeError("height must be int")
         if value < 0:
@@ -31,10 +42,17 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """get width
+        """
         return self.__width
 
     @width.setter
     def width(self, value):
+        """set width
+        Raises:
+            TypeError: if value is not int
+            ValueError: if value is <= 0
+        """
         if not isinstance(value, int):
             raise TypeError("width must be int")
         if value < 0:
@@ -43,10 +61,17 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """get x
+        """
         return self.__x
 
     @x.setter
     def x(self, value):
+        """set x
+        Raises:
+            TypeError: if x is not int
+            ValueError: if x is < 0
+        """
         if not isinstance(value, int):
             raise TypeError("x must be an int")
         if value < 0:
@@ -55,10 +80,17 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """get y
+        """
         return self.__y
 
     @y.setter
     def y(self, value):
+        """set y
+        Raises:
+            TypeError: if y is not int
+            ValueError: if y is < 0
+        """
         if not isinstance(value, int):
             raise TypeError("y must be an int")
         if value < 0:
