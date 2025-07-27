@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This module declare a Rectangle
 """
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -33,6 +33,9 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """Set height
+        Raises:
+            TypeError: if height is not int
+            ValueError: if height is < 0
         """
         if not isinstance(value, int):
             raise TypeError("height must be int")
