@@ -103,4 +103,4 @@ class Rectangle(Base):
     def area(self):
         """return area
         width * height"""
-        return width * height
+        return self.width * self.height
