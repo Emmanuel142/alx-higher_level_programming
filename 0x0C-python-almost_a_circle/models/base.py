@@ -3,6 +3,7 @@
     this project. It manage id in future classes and
     avoid duplicating code
 """
+import json
 
 
 class Base:
@@ -21,3 +22,12 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+
+    def to_json_string(list_dictionaries):
+        """This method convert dictionaries to json
+        Returns:
+            str: Json string representation
+        """
+        if not list_dictionaries or list_dictionaries is None:
+            return "[]"
+        return json.dumps(list_dictionaries)
