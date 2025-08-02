@@ -8,6 +8,8 @@ from rectangle import Rectangle
 
 class Square(Rectangle):
     """This class defines a square
+    Attributes:
+        size (int): the size of the square
     """
     def __init__(self, size, x=0, y=0, id=None):
         """This init inherit from the Rectangle
@@ -34,6 +36,8 @@ class Square(Rectangle):
     @size.setter
     def size(self, value):
         """This set the size of the square
+        Args:
+            value (int): The size of the square
         """
         self.width = value
         self.height = value
