@@ -16,6 +16,11 @@ class Rectangle(Base):
         width: get and set the width
         x: get and set x
         y: get and set y
+    Methods:
+        Area (int): The area of the rectangle
+        Display (str): use # to display in stdout
+        Update (*args,*kwargs): update the input
+        to_dictionary: returns the dict rep of a rectangle
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -131,3 +136,15 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 if key in attrs:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """This method returns the dictionary
+        representation of a class
+        """
+        return {
+                "id": self.id,
+                "width": self.width,
+                "height": self.height,
+                "x": self.x,
+                "y": self.y,
+                }
