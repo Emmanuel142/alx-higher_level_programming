@@ -35,12 +35,15 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """
-            Save dictionary into Json file
-            Args:
-                cls (class): The class Square or Rect
-                list_objs: item to save into json
-        """
-        with open(f"{cls.__name__}.json", "w") as file:
-            content = to_json_string(list_objs)
+        """Save list of objects into file"""
+        filename = f"{cls.__name__}.json"
+        list_dict = {}
+
+        if list_objs is None:
+            list_dicts = []
+        else:
+            list_dicts = [obj.to_dictionary() for obj in list_objs]
+
+        with open(filename, "w") as file:
+            content = cls.to_json_string(list_objs)
             file.write(content)
